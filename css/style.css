@@ -2,6 +2,7 @@ body {
   margin: 0;
   background-color: #f1f1f1;
   color: #333;
+  font: normal 16px/1.2 "Book Antiqua", "Times New Roman", serif;
 }
 
 /*--- Основные секции ---*/
@@ -24,7 +25,7 @@ header {
   width: 50px;
   height: 50px;
   font-size: 24px;
-  line-height: 2;
+  /*line-height: 2;*/
   padding: 5px;
   text-align: center;
   border-radius: 50%;
@@ -34,17 +35,22 @@ header {
 #a {
   background-color: #ffff00;
   color: #000;
+  font: normal 1.1em/2  "Book Antiqua", "Times New Roman", serif;
+
 }
 #r {
   background-color: #0000ff;
-
+  font: normal 1.1em/2  "Book Antiqua", "Times New Roman", serif;
 }
 
 /*--- Шрифты ---*/
 h1 {
   margin: 0;
   text-align: center;
-  flex: 1 1 auto;
+  flex: 1 1 20%;
+}
+#header-h1 {
+  font: italic 500 2em/2 "Gabriola", "Monotype Corsiva", "cursive";
 }
 
 /*--- Навигация и списки ---*/
@@ -57,5 +63,5 @@ ul {
 li {
   list-style: none;
   display: inline;
-
+  padding: 0 1%;
 }
