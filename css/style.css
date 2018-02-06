@@ -18,14 +18,20 @@ header {
 #about-me {
   margin: 0 2%;
 }
-
+footer {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
 /*--- Логотип ---*/
 #logo {
   /*background-color: #008000;*/
   width: 50px;
   height: 50px;
   font-size: 24px;
-  /*line-height: 2;*/
   padding: 5px;
   text-align: center;
   border-radius: 50%;
@@ -49,10 +55,16 @@ h1 {
   text-align: center;
   flex: 1 1 20%;
 }
-#header-h1 {
+#my-name {
   font: italic 500 2em/2 "Gabriola", "Monotype Corsiva", "cursive";
 }
+h4 {
+  font: 300 0.9em/1.2 serif;
 
+}
+h4:hover {
+  color: #ffff00;
+}
 /*--- Навигация и списки ---*/
 nav {
   flex: 1 1 auto;
