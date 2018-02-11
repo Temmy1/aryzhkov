@@ -15,7 +15,7 @@ header {
   align-items: center;
 }
 
-#about-me {
+#main-page {
   margin: 0 2%;
 }
 footer {
@@ -66,13 +66,13 @@ h4:hover {
   color: #ffff00;
 }
 /*--- Навигация и списки ---*/
-nav {
+#main-nav {
   flex: 1 1 auto;
 }
 ul {
   margin: 0;
 }
-li {
+#main-nav li {
   list-style: none;
   display: inline;
   padding: 0 1%;
