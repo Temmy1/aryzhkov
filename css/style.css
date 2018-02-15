@@ -42,7 +42,6 @@ footer {
   background-color: #ffff00;
   color: #000;
   font: normal 1.1em/2  "Book Antiqua", "Times New Roman", serif;
-
 }
 #r {
   background-color: #0000ff;
@@ -57,6 +56,9 @@ h1 {
 }
 #my-name {
   font: italic 500 2em/2 "Gabriola", "Monotype Corsiva", "cursive";
+}
+h2 {
+  font-size: 2em;
 }
 h4 {
   font: 300 0.9em/1.2 serif;
