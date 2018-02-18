@@ -18,6 +18,7 @@ header {
 #main-page {
   margin: 0 2%;
 }
+
 footer {
   background-color: #000;
   color: #fff;
@@ -29,25 +30,42 @@ footer {
 /*--- Логотип ---*/
 #logo {
   /*background-color: #008000;*/
-  width: 50px;
-  height: 50px;
-  font-size: 24px;
-  padding: 5px;
-  text-align: center;
-  border-radius: 50%;
-  flex: 0 1 60px;
+  /*width: 50px;
 
+
+  border-radius: 50%;*/
+  height: 50px;
+  margin: 5px;
+  text-align: center;
+  flex: 0 1 100px;
+  position: relative;
+  /*cursor: pointer;*/
 }
 #a {
-  background-color: #ffff00;
+  background-color: rgba(255,255,0,0.9);
   color: #000;
-  font: normal 1.1em/2  "Book Antiqua", "Times New Roman", serif;
+  font: normal 1.5em/2  "Book Antiqua", "Times New Roman", serif;
+  display:inline-block;
+  width: 48px;
+  height:auto;
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  left: 9px;
 }
 #r {
-  background-color: #0000ff;
-  font: normal 1.1em/2  "Book Antiqua", "Times New Roman", serif;
+  background-color: rgba(0,0,255,0.9);
+  font: normal 1.5em/2  "Book Antiqua", "Times New Roman", serif;
+  display:inline-block;
+  width: 48px;
+  height:auto;
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  right: 9px;
 }
-
+/* надо как-то сделать слияние этих кружков
+думаю, что подойдет position*/
 /*--- Шрифты ---*/
 h1 {
   margin: 0;
@@ -56,6 +74,7 @@ h1 {
 }
 #my-name {
   font: italic 500 2em/2 "Gabriola", "Monotype Corsiva", "cursive";
+  /*cursor: pointer;*/
 }
 h2 {
   font-size: 2em;
@@ -74,6 +93,7 @@ h4:hover {
 /*--- Навигация и списки ---*/
 #main-nav {
   flex: 1 1 auto;
+  align-self: flex-end;
 }
 ul {
   margin: 0;
@@ -82,4 +102,5 @@ ul {
   list-style: none;
   display: inline;
   padding: 0 1%;
+  cursor: pointer;
 }
