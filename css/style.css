@@ -46,7 +46,7 @@ header {
 .ornament {
   background: linear-gradient(to right,  rgb(255,255,0) 45%, rgb(0,0, 255) 65%);
   /*background-size: 50px 50px;*/
-  height: 10px;
+  height: 3px;
 }
 .main-page-article {
   padding: 2%;
