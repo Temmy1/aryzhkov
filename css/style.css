@@ -6,6 +6,7 @@ body {
 }
 
 /*--- Основные секции ---*/
+/*-- Header --*/
 header {
   background-color: #000;
   color: #fff;
@@ -15,10 +16,48 @@ header {
   align-items: center;
 }
 
-#main-page {
-  margin: 0 2%;
+#logo {
+  /*background-color: #008000;
+  border-radius: 50%;*/
+  height: 50px;
+  margin: 5px;
+  text-align: center;
+  flex: 0 1 100px;
+  position: relative;
+  /*cursor: pointer;*/
 }
 
+#my-name {
+  margin: 0;
+  text-align: center;
+  flex: 1 1 20%;
+}
+
+#main-nav {
+  flex: 1 1 auto;
+  align-self: flex-end;
+}
+/*-- Header --*/
+
+/*-- Section and articles --*/
+#main-page {
+
+}
+.ornament {
+  background: linear-gradient(to right,  rgb(255,255,0) 45%, rgb(0,0, 255) 65%);
+  /*background-size: 50px 50px;*/
+  height: 10px;
+}
+.main-page-article {
+  padding: 2%;
+  margin: 0 2%;
+}
+#intro {
+  text-align: center;
+}
+#about {
+
+}
 footer {
   background-color: #000;
   color: #fff;
@@ -28,21 +67,9 @@ footer {
   align-items: center;
 }
 /*--- Логотип ---*/
-#logo {
-  /*background-color: #008000;*/
-  /*width: 50px;
 
-
-  border-radius: 50%;*/
-  height: 50px;
-  margin: 5px;
-  text-align: center;
-  flex: 0 1 100px;
-  position: relative;
-  /*cursor: pointer;*/
-}
 #a {
-  background-color: rgba(255,255,0,0.9);
+  background-color: rgba(255,255,0,1);
   color: #000;
   font: normal 1.5em/2  "Book Antiqua", "Times New Roman", serif;
   display:inline-block;
@@ -52,9 +79,10 @@ footer {
   position: absolute;
   top: 1px;
   left: 9px;
+
 }
 #r {
-  background-color: rgba(0,0,255,0.9);
+  background-color: rgba(0,0,255,0.8);
   font: normal 1.5em/2  "Book Antiqua", "Times New Roman", serif;
   display:inline-block;
   width: 48px;
@@ -64,43 +92,55 @@ footer {
   top: 1px;
   right: 9px;
 }
-/* надо как-то сделать слияние этих кружков
-думаю, что подойдет position*/
+/* Как сделать чтобы в месте слияния образовывался другой цвет?*/
+
 /*--- Шрифты ---*/
-h1 {
-  margin: 0;
-  text-align: center;
-  flex: 1 1 20%;
-}
-#my-name {
+
+/*- Font for header -*/
+h2  {
   font: italic 500 2em/2 "Gabriola", "Monotype Corsiva", "cursive";
   /*cursor: pointer;*/
 }
-h2 {
+/*- Font for header -*/
+
+/*- fonts for section and articles -*/
+h1 {
   font-size: 2em;
 }
-h4 {
-  font: 300 0.9em/1.2 serif;
-
-}
-h4:hover {
-  color: #ffff00;
+#welcome-words {
+  font-size: 2.5em;
 }
 
+#about h1 {
+  text-align: right;
+}
 #real-purpose {
   text-decoration: line-through;
 }
-/*--- Навигация и списки ---*/
-#main-nav {
-  flex: 1 1 auto;
-  align-self: flex-end;
+/*- fonts for section -*/
+
+/*- fonts for footer -*/
+h5 {
+  font: 300 0.9em/1.2 serif;
+
 }
+h5:hover {
+  color: #ffff00;
+}
+/*- fonts for footer -*/
+
+
+/*--- Навигация и списки ---*/
+
 ul {
   margin: 0;
 }
 #main-nav li {
   list-style: none;
   display: inline;
-  padding: 0 1%;
+  padding-right: 20px;
   cursor: pointer;
+}
+#main-nav li:last-child {
+  padding-right:0;
 }
