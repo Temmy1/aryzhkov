@@ -59,8 +59,14 @@ header {
 #about {
 
 }
+
+#blog-header {
+  text-align: center;
+  margin:0;
+  /* надо сделать что-то типа волны! 4 марта не удалось, устал*/
+}
 footer {
-  background: linear-gradient(to right,  rgb(0,0,0) 45%, rgb(0,0, 255) 65%);
+  background: linear-gradient(to right,  rgb(0,0,0) 65%, rgb(0,0, 255) 80%);
   color: #fff;
   display: flex;
   flex-direction: row;
@@ -103,7 +109,6 @@ h2  {
   font: italic 500 1.7em/2 "Gabriola", "Monotype Corsiva", "cursive";
 }
 
-
 /*- fonts for section and articles -*/
 h1 {
   font-size: 2em;
@@ -111,21 +116,28 @@ h1 {
 #welcome-words {
   font-size: 3em;
 }
-
 #about h1 {
   text-align: right;
 }
-#real-purpose {
-  text-decoration: line-through;
+h3 {
+  font-size: 1.4em;
 }
+
 h4 {
   font-size: 1.5em;
+}
+
+#real-purpose {
+  text-decoration: line-through;
 }
 p {
   font-size: 18px;
   /*text-indent: 15px;*/
 }
-
+time {
+  color: #888;
+  font-size: 14px;
+}
 /*- fonts for footer -*/
 #main-footer p {
   font-size: 1em;
