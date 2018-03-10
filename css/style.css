@@ -177,13 +177,33 @@ a {
   text-decoration:none;
   color: #00f;
 }
-
+a:visited {
+  color: #007dff;
+}
 /************* Settings for smallest screens ---------------*/
 
 @media screen and(max-width: 800px) {
   body {
     font-size: 14px;
     line-height: 1.2;
+  }
+  header {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #logo {
+    width: 100px;
+    flex: 0 1 auto;
+  }
+  #main-nav {
+    align-self: auto;
+    text-align: left;
+  }
+  ul {
+    padding: 1%;
+  }
+  li {
+    display: block;
   }
   .article {
     margin: 0 1%;
