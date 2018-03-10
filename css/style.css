@@ -180,9 +180,14 @@ a {
 a:visited {
   color: #007dff;
 }
-/************* Settings for smallest screens ---------------*/
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+/*--- Icons ---*/
+.fab:hover {
+  color: #ffff00;
+}
+/************* Settings for smallest screens ---------------*/
+/* I think that I do not understand something*/
+@media screen and (min-width:768px) and (max-width:1200px) {
   body {
     font-size: 14px;
     line-height: 1.2;
