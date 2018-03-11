@@ -73,7 +73,7 @@ footer {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding: 2px;
+  padding: 5px;
 }
 /*--- Логотип ---*/
 
@@ -153,7 +153,6 @@ h5:hover {
 }
 
 
-
 /*--- Навигация и списки ---*/
 
 ul {
@@ -182,12 +181,16 @@ a:visited {
 }
 
 /*--- Icons ---*/
+.fab{
+  margin-right: 10px;
+  color: #fff; 
+}
 .fab:hover {
   color: #ffff00;
 }
 /************* Settings for smallest screens ---------------*/
 /* I think that I do not understand something*/
-@media screen and (min-width:768px) and (max-width:1200px) {
+@media screen and (max-width:768px) {
   body {
     font-size: 14px;
     line-height: 1.2;
@@ -195,28 +198,62 @@ a:visited {
   header {
     flex-direction: column;
     justify-content: space-around;
+    align-items: flex-start;
   }
   #logo {
     width: 100px;
     flex: 0 1 auto;
   }
+  #a, #r {
+    width: 42px;
+  }
+  #a {
+    left: 13px;
+  }
+  #r {
+    right: 13px;
+  }
   #main-nav {
-    align-self: auto;
+    align-self: stretch;
     text-align: left;
   }
   ul {
-    padding: 1%;
+    padding-left: 20px;
+    padding-bottom: 5px;
   }
-  li {
+  #main-nav li {
     display: block;
+    margin-right: 0;
+    padding-top: 5px;
+  }
+  #main-nav li:last-child {
+    margin-right: 0;
   }
   .article {
     margin: 0 1%;
   }
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contact-icons {
+    margin: 10px;
+  }
+  #main-footer h5,
+  #main-footer p {
+    margin: 10px 0 10px 10px;
+  }
   h1,h4 {
+    text-align: center;
+  }
+  #about h1 {
     text-align: center;
   }
   #welcome-words {
     font-size: 2em;
   }
+  p {
+     font-size: 14px; /* или оставить 16px?*/
+   }
+
 }
