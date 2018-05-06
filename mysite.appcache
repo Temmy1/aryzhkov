@@ -1,0 +1,9 @@
+CACHE MANIFEST
+
+# cache my site
+
+CACHE:
+index.html
+blog.html
+css/style.css
+templates/ 
