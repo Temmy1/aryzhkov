@@ -6,6 +6,7 @@ body {
 }
 
 /*--- Основные секции ---*/
+
 /*-- Header --*/
 header {
   background: linear-gradient(to right,  rgb(0,0,0) 65%, rgb(0,0, 255) 80%);
@@ -18,8 +19,6 @@ header {
 }
 
 #logo {
-  /*background-color: #008000;
-  border-radius: 50%;*/
   height: 50px;
   margin: 5px;
   text-align: center;
@@ -42,9 +41,7 @@ header {
 
 
 /*-- Section and articles --*/
-#main-page {
 
-}
 .ornament {
   background: linear-gradient(to right,  rgb(0,0,0) 55%, rgb(0,0, 255) 75%);
   height: 3px;
@@ -53,17 +50,14 @@ header {
   padding: 2%;
   margin: 0 2%;
 }
-#intro {
+#intro,
+#blog {
   text-align: center;
-}
-#about {
-
 }
 
 #blog-header {
   text-align: center;
   margin:0;
-  /* надо сделать что-то типа волны! 4 марта не удалось, устал*/
 }
 footer {
   background: linear-gradient(to right,  rgb(0,0,0) 65%, rgb(0,0, 255) 80%);
@@ -101,7 +95,7 @@ footer {
   top: 1px;
   right: 9px;
 }
-/* Как сделать чтобы в месте слияния образовывался другой цвет?*/
+
 
 /*--- Шрифты ---*/
 
@@ -118,7 +112,7 @@ h1 {
   font-size: 3em;
 }
 #about h1 {
-  text-align: right;
+  text-align: center;
 }
 h3 {
   font-size: 1.4em;
@@ -249,7 +243,7 @@ a:visited {
     font-size: 2em;
   }
   p {
-     font-size: 14px; /* или оставить 16px?*/
+     font-size: 14px;
    }
 
 }
