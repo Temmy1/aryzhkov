@@ -165,8 +165,11 @@ ul {
 #main-footer a {
   color: #fff;
 }
+#main-footer a:hover {
+  color: #ffff00;
+}
 a {
-  text-decoration:none;
+  text-decoration: none;
   color: #00f;
 }
 a:visited {
@@ -174,13 +177,11 @@ a:visited {
 }
 
 /*--- Icons ---*/
-.fab{
-  margin-right: 30px;
-  color: #fff;
+
+.fa-2x {
+  margin: 0 10px;
 }
-.fab:hover {
-  color: #ffff00;
-}
+
 /************* Settings for smallest screens ---------------*/
 
 @media screen and (max-width:768px) {
