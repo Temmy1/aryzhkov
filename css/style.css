@@ -3,6 +3,7 @@ body {
   background-color: #fff;
   color: #333;
   font: normal 16px/1.5 "Book Antiqua", "Times New Roman", serif;
+
 }
 
 /*--- Основные секции ---*/
@@ -16,6 +17,11 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 2px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 #logo {
@@ -41,24 +47,28 @@ header {
 
 
 /*-- Section and articles --*/
-
+section {
+  margin-top: 64px;
+  padding: 2%;
+}
 .ornament {
   background: linear-gradient(to right,  rgb(0,0,0) 55%, rgb(0,0, 255) 75%);
   height: 3px;
 }
 .article {
   padding: 2%;
-  margin: 0 2%;
+  text-align: justify;
 }
-#intro,
-#blog {
+.main-page {
+  padding: 2%;
   text-align: center;
 }
 
 #blog-header {
   text-align: center;
-  margin:0;
+  margin: 0;
 }
+
 footer {
   background: linear-gradient(to right,  rgb(0,0,0) 65%, rgb(0,0, 255) 80%);
   color: #fff;
@@ -103,7 +113,7 @@ footer {
 h2  {
   font: italic 500 1.7em/2 "Gabriola", "Monotype Corsiva", "cursive";
 }
-
+/*отрегулировать размер шрифта в меню хэдера*/
 /*- fonts for section and articles -*/
 h1 {
   font-size: 2em;
@@ -123,7 +133,7 @@ h4 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 1.2em;
   /*text-indent: 15px;*/
 }
 time {
@@ -144,9 +154,12 @@ h5:hover {
 
 
 /*--- Навигация и списки ---*/
-/*на следующий раз разобраться со списками вне header на вызодных это надо сделать!*/
+
 ul {
   margin: 0;
+}
+.article li {
+  font-size: 1.2em;
 }
 #main-nav li {
   list-style: none;
@@ -240,7 +253,8 @@ a:visited {
   #welcome-words {
     font-size: 2em;
   }
-  p {
+  p,
+  .article li {
      font-size: 14px;
    }
 
