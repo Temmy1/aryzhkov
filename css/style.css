@@ -135,7 +135,7 @@ time {
   font-size: 14px;
 }
 /*- fonts for footer -*/
-#main-footer p {
+.main-footer p {
   font-size: 1em;
 }
 h5 {
@@ -171,12 +171,6 @@ ul {
 #main-nav a {
   color: #fff;
 }
-#main-footer a {
-  color: #fff;
-}
-#main-footer a:hover {
-  color: #ffff00;
-}
 a {
   text-decoration: none;
   color: #00f;
@@ -184,11 +178,25 @@ a {
 a:visited {
   color: #007dff;
 }
+.main-footer a {
+  color: #fff;
+}
+.main-footer a:hover {
+  color: #ff0;
+}
+.contact-icons a {
+  color: #fff;
+}
+.contact-icons a:hover {
+  color: #ff0;
+}
+
 
 /*--- Icons ---*/
 
 .fa-2x {
   margin: 0 10px;
+  transition: all 0.7s ease;
 }
 
 /************* Settings for smallest screens ---------------*/
@@ -237,8 +245,8 @@ a:visited {
   .contact-icons {
     margin: 10px;
   }
-  #main-footer h5,
-  #main-footer p {
+  .main-footer h5,
+  .main-footer p {
     margin: 10px 0 10px 10px;
   }
   h1,h4 {
